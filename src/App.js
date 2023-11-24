@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import './App.css';
 
+
 const App = () => {
   const [date, setDate] = useState(new Date());
   const [habits, setHabits] = useState([]);
@@ -76,38 +77,42 @@ const App = () => {
       </div>
       
       <div className="habits-container">
-      
       <h1 className='list-name'>YOUR HABIT LIST</h1>
+      
         <h2>{date.toDateString()}</h2>
-        <ul>
+        <ul className='sucess'>
           {habits.map((habit, dateIndex) =>
             habit.date.toDateString() === date.toDateString() ? (
               habit.habits.map((h, habitIndex) => (
                 <li key={habitIndex}>
                   <h3>{h.habit}</h3>
-                  <label>
+                  <label className='gre'>
                     <input
+                    
                       type="checkbox"
                       checked={h.status === 'Done'}
                       onChange={() => updateStatus(dateIndex, habitIndex, 'Done')}
                     />
                     Done
                   </label>
-                  <label>
-                    <input
+                  <label className='re'>
+                    <input 
+                    
                       type="checkbox"
                       checked={h.status === 'Not Done'}
                       onChange={() => updateStatus(dateIndex, habitIndex, 'Not Done')}
                     />
                     Not Done
                   </label>
-                  <label>
+                  <label className='bla'>
                     <input
+                    
                       type="checkbox"
                       checked={h.status === 'N.A.'}
                       onChange={() => updateStatus(dateIndex, habitIndex, 'N.A.')}
                     />
-                    N.A.
+                    Forget
+                    <br></br>
                   </label>
                   <button onClick={() => deleteHabit(dateIndex, habitIndex)}>Delete</button>
                 </li>
