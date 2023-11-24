@@ -1,5 +1,5 @@
 .full{
-  background-image: url("C:\Users\prvbs .Rakesh\OneDrive\Documents\GitHub\my\img\1.jpeg");
+  background-image: url("C:\Users\prvbs .Rakesh\OneDrive\Documents\GitHub\habit-track-react.js\img\1.jpeg");
   
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +31,8 @@
   width: auto;
   text-align: center;
   font-size: 1.5em;
-  color: #030247;
+  
+  color: #360394;
   margin: auto;
   padding: 2rem;
   
@@ -57,7 +58,9 @@
 }
 
 li {
-  color: #9e3207;
+  background-color: #558b8d;
+  border-radius: 20px;
+  color: #201e00;
   margin-bottom: 10px;
   
   
@@ -73,7 +76,7 @@ input[type="checkbox"] {
 
 .add-habit-container {
 
-  border: solid rgb(3, 3, 3) 2px;
+  border: solid rgb(112, 2, 116) 2px;
   text-align: center;
   margin-top: 10px;
   justify-content: center;
@@ -124,8 +127,8 @@ input[type="checkbox"] {
   font-size: 15px;
   font-weight: 400;
   background-color: rgb(248, 246, 246);
-  border: darkblue
-
+  border: darkblue;
+  border-radius: 10px;
 }
 .but{
   color: black;
@@ -161,4 +164,8 @@ input[type="checkbox"] {
 h2{
   text-transform: uppercase;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.del{
+  border-radius: 20px;
+  color: blueviolet;
 }
