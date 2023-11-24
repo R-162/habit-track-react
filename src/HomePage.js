@@ -8,7 +8,7 @@ const HomePage = () => {
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        {/* Add more routes as needed */}
+
       </Routes>
     </Router>
   );
